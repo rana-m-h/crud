@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Book mark</title>
+</head>
+<body class="bg-dark">
+
+
+
+
+<div class="con-head text-center" >
+    <h1>Bookmarker</h1>
+</div>
+
+
+
+
+
+<div class="container ">
+    <div class="w-50 mx-auto py-5 ">
+
+      
+        <label for="productNameInput"  class="text-capitalize "> </label>
+        <input type="text" id="productNameInput" oninput="book(this.value)" class="form-control mb-3" placeholder="Bookmark Name">
+        
+        <label for="producturlInput" class="text-capitalize"></label>
+        <input type="text" id="producturlInput" oninput="valid(this.value)" class="form-control mb-3" placeholder="Website URL">
+        
+        <button onclick ="add()" class="btn btn-primary px-4 add">Add Book</button>
+
+
+       
+        
+    
+        </div>
+        
+</div>
+
+<div class="container">
+    <div class="display">
+        <table class="table text-center mt-5">
+            <thead class=" text-light ">
+                <th>Index</th>
+                <th>Book Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              
+            </thead>
+            
+<tbody id="table" class="text-white bg-gradient">
+    
+</tbody>
+
+        </table>
+    </div>
+    
+</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="min.js"></script>
+</body>
+</html>
