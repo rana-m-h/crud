@@ -66,7 +66,7 @@ function deleteBook(deleteindex ){
 }
 
 function valid(url){
-var regexUrl =  /^https[:][w]{3}[.][A-z]{5,10}[.](com|en|eg)$/;
+var regexUrl =  /^https[:][/]{2}[w]{3}[.][A-z]{5,10}[.](com|en|eg)[/]$/;
 
 
 if( regexUrl.test (url)){
